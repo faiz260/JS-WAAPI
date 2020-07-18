@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div id="body2">
+        <h1 id="text">Warning !</h1>
+    </div>
+
+    <script >
+
+      var elem2 = document.getElementById('body2');
+      elem2.animate([
+          { transform: 'scale(0.1)', background: "white", color: "white"},
+          { transform: 'scale(0.8)', background: "red",  color: "white"},
+          {transform: 'scale(0.1)', background: "white",  color: "white"},
+      ], {
+          duration:3000,
+          iterations: Infinity
+      })
+    </script>
+  </body>
+</html>
